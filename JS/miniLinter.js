@@ -8,7 +8,7 @@ let overusedWords = ['really', 'very', 'basically'];
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 
 const betterWords = storyWords.filter(word => {
-  if (unnecessaryWords.includes(word) !== storyWords.includes(word)) {
+  if (unnecessaryWords.includes(word)) {
     return word;
   };
 });
