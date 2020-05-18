@@ -12,5 +12,12 @@ const betterWords = storyWords.filter(word => {
     return word;
   };
 });
+console.log(betterWords.length);
 
-console.log(betterWords);
+let sentences = 0;
+storyWords.forEach(word => {
+  if (word[word.length-1] === '.' || word[word.length-1] === '!') {
+    sentences += 1;
+  }
+});
+console.log(sentences);
